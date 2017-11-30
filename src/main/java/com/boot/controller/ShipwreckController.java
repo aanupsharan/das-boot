@@ -26,7 +26,7 @@ public class ShipwreckController {
     }
 
     @RequestMapping(value="shipwrecks/{id}", method=RequestMethod.PUT)
-    public Shipwreck update(@PathVariable long id, @RequestMapping Shipwreck shipwreck){
+    public Shipwreck update(@PathVariable long id, @RequestBody Shipwreck shipwreck){
         return ShipwreckStub.update(id, shipwreck);
     }
 
